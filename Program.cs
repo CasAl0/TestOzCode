@@ -21,6 +21,7 @@ namespace TestOzCode
                 into multipleOfFiveAndOdd
                 where multipleOfFiveAndOdd % 15 == 0
                 select multipleOfFiveAndOdd;
+             
 
             var result2 = numbers.Select(n => new { n, isEven = n % 2 == 0 })
                 .Select(@t => new { @t, isOdd = !@t.isEven })
